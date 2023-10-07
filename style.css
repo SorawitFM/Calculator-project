@@ -41,8 +41,8 @@
 }
 
 #allButton {
-    margin: 10px;
-    padding: 10px;
+    margin: 1px;
+    padding: 1px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     /* แบ่งปุ่มเป็น 4 คอลัมน์ */
