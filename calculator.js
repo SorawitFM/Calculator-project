@@ -1,9 +1,7 @@
-
-
 function totalText(i) {
     document.getElementById('myouput').innerHTML = i
 }
-//ตัวเลขและจุด
+//----------------------Number&dot--------------------------
 document.getElementById('dot').addEventListener('click', () => {
     var input = document.getElementById('myouput').innerHTML + '.'
     totalText(input)
@@ -48,8 +46,7 @@ document.getElementById('Numb9').addEventListener('click', () => {
     var input = document.getElementById('myouput').innerHTML + '9'
     totalText(input)
 })
-
-//Operator
+//----------------------Operator--------------------------
 document.getElementById('plus').addEventListener('click', () => {
     var input = document.getElementById('myouput').innerHTML + '+'
     totalText(input)
@@ -66,7 +63,7 @@ document.getElementById('division').addEventListener('click', () => {
     var input = document.getElementById('myouput').innerHTML + '/'
     totalText(input)
 })
-//Controler
+//----------------------Controler--------------------------
 document.getElementById('equal').addEventListener('click', () => {
     document.getElementById('myouput').innerHTML = eval(document.getElementById('myouput').innerHTML) || ''
 })
