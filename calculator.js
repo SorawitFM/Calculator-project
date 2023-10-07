@@ -65,7 +65,18 @@ document.getElementById('division').addEventListener('click', () => {
 })
 //----------------------Controler--------------------------
 document.getElementById('equal').addEventListener('click', () => {
-    document.getElementById('myouput').innerHTML = eval(document.getElementById('myouput').innerHTML) || ''
+    try {
+        const result = eval(document.getElementById('myouput').innerHTML);
+        if (isNaN(result) || !isFinite(result)) {
+            document.getElementById('myouput').innerHTML = 'Syntax Error';
+        } else {
+            // กำหนดทศนิยมไม่เกิน 4 ตำแหน่ง
+            const formattedResult = parseFloat(result.toFixed(4));
+            document.getElementById('myouput').innerHTML = formattedResult.toString();
+        }
+    } catch (error) {
+        document.getElementById('myouput').innerHTML = 'Syntax Error';
+    }
 })
 document.getElementById('delete').addEventListener('click', () => {
     var deleteItem = document.getElementById('myouput').innerHTML

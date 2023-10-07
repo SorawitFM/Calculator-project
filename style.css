@@ -1,0 +1,55 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+#border-Outside {
+    border: 3px solid;
+    margin: 2rem;
+    min-width: 320px;
+}
+
+/* CSS สำหรับหน้าจอแสดงผล */
+#screen {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: right;
+    border-radius: 10px;
+    height: 100px;
+    /* เพิ่มขอบมนต์สำหรับกรอบ */
+}
+
+#myouput {
+    font-size: 36px;
+}
+
+/* CSS สำหรับปุ่ม */
+.btn {
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    /* เพิ่มขอบมนต์สำหรับกรอบ */
+}
+
+/* กำหนดสีพื้นหลังและข้อความในปุ่มตัวเลข */
+.Number {
+    background-color: #f2f2f2;
+}
+
+/* กำหนดสีพื้นหลังและข้อความในปุ่มเครื่องหมาย */
+#multiplication,
+#division,
+#plus,
+#minus,
+#equal {
+    background-color: #ff9900;
+    color: white;
+}
