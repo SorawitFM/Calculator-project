@@ -1,18 +1,30 @@
 * {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: "Quicksand", sans-serif;
 }
 
 #border-Outside {
-    border: 3px solid;
-    margin: 2rem;
+    border: 3px solid #ccc;
+    margin: 2rem auto;
     min-width: 320px;
+    max-width: 400px;
+    /* ปรับความกว้างสูงสุดของเครื่องคิดเลข */
+    border-radius: 10px;
+    padding: 20px;
+    /* เพิ่มช่องว่างข้างในกรอบ */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* เพิ่มเงาให้กรอบ */
+    background-image: url(https://images.unsplash.com/photo-1696229478537-4d3f297025b9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: background-image 2s ease-in-out;
 }
 
 /* CSS สำหรับหน้าจอแสดงผล */
 #screen {
-    background-color: #f2f2f2;
+    background-color: #f2f2f28d;
     border: 1px solid #ccc;
     margin: 10px;
     padding: 10px;
@@ -20,6 +32,23 @@
     border-radius: 10px;
     height: 100px;
     /* เพิ่มขอบมนต์สำหรับกรอบ */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 36px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* เพิ่มเงาให้หน้าจอแสดงผล */
+}
+
+#allButton {
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* แบ่งปุ่มเป็น 4 คอลัมน์ */
+    gap: 10px;
+    /* ระยะห่างระหว่างปุ่ม */
+    justify-items: center;
 }
 
 #myouput {
@@ -33,15 +62,19 @@
     height: 60px;
     margin: 5px;
     border: 1px solid #ccc;
-    background-color: #fff;
+    background-color: #ffffff7c;
     cursor: pointer;
     border-radius: 10px;
+    /* ทำให้ปุ่มเป็นวงกลม */
     /* เพิ่มขอบมนต์สำหรับกรอบ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* กำหนดสีพื้นหลังและข้อความในปุ่มตัวเลข */
 .Number {
-    background-color: #f2f2f2;
+    background-color: #f2f2f27c;
 }
 
 /* กำหนดสีพื้นหลังและข้อความในปุ่มเครื่องหมาย */
@@ -52,4 +85,26 @@
 #equal {
     background-color: #ff9900;
     color: white;
+}
+
+/* ตั้งค่าการเลื่อนเมาส์ */
+.btn:hover {
+    background-color: #ccc;
+}
+
+#clear {
+    grid-column: span 2;
+    width: 150px;
+    /* ปรับความกว้างให้ปุ่ม C มี 2 คอลัมน์ */
+}
+
+/* กำหนดความกว้างของปุ่ม "=" */
+#equal {
+    grid-column: span 2;
+    width: 150px;
+    /* ปรับความกว้างให้ปุ่ม = มี 2 คอลัมน์ */
+}
+
+#Namee {
+    font-size: 20px;
 }
